@@ -36,10 +36,10 @@ function storeName(displayName) {
 // For restoring user's display name, if set in the past
 function restoreName() {
   // Your code here
-  const currentTheme = window.sessionStorage.getItem(NAME_KEY);
+  const currentName = window.sessionStorage.getItem(NAME_KEY);
 
-  if (currentTheme) {
-    setTheme(`display-name`, currentTheme);
+  if (currentName) {
+    restoreName(`display-name`, currentTheme);
   }
 }
 
